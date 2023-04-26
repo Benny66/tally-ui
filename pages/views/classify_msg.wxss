@@ -1,0 +1,113 @@
+/* pages/views/classify_msg.wxss */
+.list{
+  padding: 30rpx;
+}
+.title{
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #232A24;
+}
+.hint{
+  font-size: 28rpx;
+  padding: 40rpx 0rpx;
+  color: #666666;
+}
+.navs{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+}
+.navs .item{
+  padding: 12rpx 24rpx;
+  border-right: 16rpx;
+  background: #f8f8f8;
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  
+  color: #adaeae;
+  display: flex;
+  align-items: center;
+}
+.navs .item.active{
+  font-weight: bold;
+  color: #33b793;
+  background: rgba(34,173,135, 0.1);
+}
+.navs .date{
+  position: absolute;
+  right: 30rpx;
+}
+.navs .arrow{
+  color: #adaeae;
+  transform:rotate(90deg);
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+
+.classify{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.classify .item{
+  padding: 16rpx;
+  text-align: center;
+  float: left;
+}
+.classify .item.zw{
+  padding: 0 16rpx;
+}
+.classify .item.zw .abc{
+  width: 82rpx;
+}
+.classify .item .cover{
+  width: 82rpx;
+  height: 82rpx;
+  margin: auto;
+  border-radius: 50%;
+  background: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+}
+.classify .item .name{
+  font-size: 24rpx;
+  color: #adaeae;
+  margin-top: 12rpx;
+}
+
+.main-bb{
+  padding-top: 40rpx;
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+}
+
+
+.form{
+  display: flex;
+  align-items: center;
+  padding: 26rpx 0;
+  padding-top: 42rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+.form .lebal{ 
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #232a24;
+}
+.form .value{ 
+  padding-left: 30rpx;
+  font-size: 38rpx;
+  color: #232a24;
+  
+  font-weight: bold;
+}
+.form .value input{
+  height: 48rpx;
+}
+.form .value .plac{
+  font-size: 28rpx;
+  color: #adaeae;
+  font-weight: 400;
+}

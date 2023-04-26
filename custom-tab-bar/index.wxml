@@ -1,0 +1,16 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <image class="bg" src="../images/tabbar/tab-bg.png"></image>
+  <view class="main">
+    <block  wx:for="{{list}}" wx:key="index">
+      <view wx:if="{{item.text?true:false}}" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+        <image class="icon" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
+        <view class="txt" style="color: {{selected === index ? selectedColor : color}}">{{item.text}}</view>
+      </view>
+      <view wx:else class="tab-bar-item yuan-bar" data-index="{{2}}" data-path="{{item.pagePath}}" bindtap="switchTab">
+        <image class="semicircle" src="../images/tabbar/add_del.png"></image>
+      </view>
+    </block>
+  </view>
+</view>
+

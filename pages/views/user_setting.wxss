@@ -1,0 +1,58 @@
+/* pages/views/user_setting.wxss */
+.form{
+  padding-top: 100rpx;
+}
+.form .head{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: auto;
+  border: 6rpx solid #ffffff;
+  margin-bottom: 100rpx;
+  position: relative;
+}
+.form .head image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.form .head .icon{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.form .item{
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f8f8f8;
+}
+.form .item .hint{
+  font-size: 28rpx;
+  color: #ADAEAE;
+}
+.form .item .value{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #232A24;
+  font-weight: bold;
+  padding: 0 30rpx;
+  padding-right: 0;
+  text-align: right;
+}
+.form .item .value input{
+  text-align: right;
+  width: 100%;
+  margin-right: 10rpx;
+}
+.form .item .value .plac,.form .item .value .arrow{
+  font-size: 28rpx;
+  color: #ADAEAE;
+}
+.confirm{
+  padding-top: 62rpx;
+}

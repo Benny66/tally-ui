@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index"
+  },
+  "navigationBarTitleText": " "
+}

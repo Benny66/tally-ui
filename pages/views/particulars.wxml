@@ -1,0 +1,62 @@
+<!--pages/views/particulars.wxml-->
+<view class="particulars">
+  <van-sticky>
+    <view class="head">
+      <view class="top">
+        <text class="title">记账明细</text>
+       
+          <picker bindchange="bindPickerChange" range-key="name" value="{{index}}" range="{{types}}">
+            <view class="type"> 
+            {{typeInfo.name || '选择类型'}} <van-icon class="icon" name="apps-o" /> 
+          </view>
+          </picker>
+         
+      </view>
+
+      <view class="date">
+
+        <picker bindchange="bindPickerChangeDate" mode="date" fields="month">
+          <view class="a1">{{form.date_lebal || '请选择'}} <image class="aw" src="../../images/icon/arrow.png"></image> </view>
+    </picker>
+        
+        <!-- <view class="a2"> <text style="margin-right:30rpx">收入888.00元</text>  <text>支出888.00元</text> </view> -->
+      </view>
+    </view>
+  </van-sticky>
+
+  <view class="list app-list">
+    <view class="item">
+
+      <!-- <view class="top">
+        <view class="name color2"> <view class="app-ii"></view> 01号 </view>
+        <view class="hint"> <text>收 600</text>，<text>支 600</text> </view>
+      </view> -->
+
+      <block wx:if="{{list.length}}">
+        <view class="box" wx:for="{{list}}">
+          <view class="cover" style="background-image: url({{item.category_info.icon_url}});"></view>
+          <view class="info">
+            <view class="sub-title">{{item.category_info.name}} ~ {{item.name}}</view>
+            <view class="time">{{item.str_time}}</view>
+            <view class="pay">
+              <text wx:if="{{item.type == 1}}" class="color-zc">-{{item.money}}</text> 
+                <text wx:if="{{item.type == 2}}" class="color-sr">+{{item.money}}</text>
+                <text wx:if="{{item.type == 3}}" class="color-zc">.{{item.money}}</text>
+            </view>
+
+     
+
+
+          </view>
+        </view>
+      </block>
+      <van-empty wx:else description="没有数据" />
+
+    </view>
+  
+  </view>
+
+
+
+
+</view>

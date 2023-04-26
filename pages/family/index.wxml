@@ -1,0 +1,4 @@
+<!--pages/family/index.wxml-->
+<view>
+  <van-empty description="待开发" />
+</view>

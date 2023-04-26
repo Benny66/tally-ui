@@ -1,0 +1,57 @@
+<!--pages/views/particulars.wxml-->
+<view class="particulars">
+  <van-sticky>
+    <view class="head">
+      <view class="top">
+        <text class="title">记账排行</text>
+        <picker class="type" bindchange="bindNav" range-key="name" value="{{index}}" range="{{navs}}" > 
+          <view class="value">{{navInfo.name || '选择类型'}} <van-icon class="aw" name="apps-o"></van-icon>
+          <!-- <image class="aw" src="../../images/icon/arrow.png"></image>   -->
+          </view>
+        </picker>
+      </view>
+
+      <view class="date">
+        <!-- <view class="a1">2019年8月 <image class="aw" src="../../images/icon/arrow.png"></image> </view> -->
+        <view class="a1">
+          <picker bindchange="bindPickerChangeDate" mode="date">
+            <view class="value">{{formTj.date_year_lebal}}{{formTj.date_lebal || '请选择'}} <image class="aw" src="../../images/icon/arrow.png"></image> </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </van-sticky>
+
+  <view class="list">
+    <view class="item">
+
+      <view class="box"  wx:for="{{list}}" wx:key="index">
+        <view class="sort" wx:if="{{index == 0}}">
+          <image src="../../images/icon/sort1.png"></image>
+        </view>
+        <view class="sort" wx:if="{{index == 1}}">
+          <image src="../../images/icon/sort2.png"></image>
+        </view>
+        <view class="sort" wx:if="{{index == 2}}">
+          <image src="../../images/icon/sort3.png"></image>
+        </view>
+        <view class="sort" wx:if="{{index > 2}}">2{{index+1}}</view>
+        <image class="cover"  src="{{item.avatarUrl}}"></image>
+        <view class="info">
+          <view class="sub-title">{{item.nickname}}</view>
+          <view class="time">{{item.time}}</view>
+
+          <view wx:if="{{navInfo.type === 1}}" class="pay">-{{item.pay}}</view>
+          <view wx:if="{{navInfo.type === 2}}" class="pay">+{{item.pay}}</view>
+          <view wx:if="{{navInfo.type === 3}}" class="pay">.{{item.pay}}</view>
+        </view>
+      </view>
+
+    </view>
+  
+  </view>
+
+
+
+
+</view>

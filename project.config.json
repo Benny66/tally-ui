@@ -1,0 +1,185 @@
+{
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./"
+      }
+    ],
+    "minifyWXSS": true,
+    "showES6CompileOption": false,
+    "condition": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.26.1",
+  "appid": "wx38d3d349caa4dae8",
+  "projectname": "dashengyoupai",
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/index/index",
+          "pathName": "pages/management/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/index/index",
+          "pathName": "pages/management/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/list/index",
+          "pathName": "pages/management/task/list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/detail/index",
+          "pathName": "pages/management/task/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/inst/index",
+          "pathName": "pages/user/inst/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/about/index",
+          "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "id=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

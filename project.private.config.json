@@ -1,0 +1,1045 @@
+{
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "projectname": "open-tally-app-master",
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/index/index",
+          "pathName": "pages/management/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/index/index",
+          "pathName": "pages/management/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/list/index",
+          "pathName": "pages/management/task/list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/detail/index",
+          "pathName": "pages/management/task/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/inst/index",
+          "pathName": "pages/user/inst/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/about/index",
+          "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=7",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/inst/index",
+          "pathName": "pages/user/inst/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/about/index",
+          "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/login/index",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/info/index",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=7",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "id=9",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=7",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/detail/index",
+          "pathName": "pages/order/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/detail",
+          "pathName": "pages/management/order/list/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/detail",
+          "pathName": "pages/management/order/list/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/detail",
+          "pathName": "pages/management/order/list/detail",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/list",
+          "pathName": "pages/management/order/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/order/list/detail",
+          "pathName": "pages/management/order/list/detail",
+          "query": "id=6",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/about/index",
+          "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/management/task/add/index",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/management/task/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/index",
+          "query": "is_type=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/detail/index",
+          "query": "id=4",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/management/banner/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/qun/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/serve/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/serve/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/volume/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/labor/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/labor/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/search/index",
+          "query": "active=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/volume/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/detail/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/detail/index",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/detail/index",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/volume/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/labor/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/404/index",
+          "pathName": "pages/404/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/agreement/index",
+          "pathName": "pages/agreement/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/detail",
+          "query": "id=5",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/detail",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/quiz",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/house/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/house/index",
+          "query": "active=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/detail",
+          "query": "id=7",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/digitization/index",
+          "query": "active=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/detail",
+          "query": "id=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/study/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/collect/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/study/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/labor/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/index",
+          "query": "active=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/search/index",
+          "query": "active=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/answers/digitization",
+          "query": "active=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/serve/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/index",
+          "query": "active=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/index",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/index",
+          "query": "type=2",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/books/detail",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/kith/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/mi/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/mi/center/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/kith/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/kith/center/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/pay/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/qrcode/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/pay/index",
+          "query": "type=user",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/add/index",
+          "pathName": "pages/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/add_books",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/user_setting",
+          "pathName": "pages/views/user_setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/classify_msg",
+          "pathName": "pages/views/classify_msg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/particulars",
+          "pathName": "pages/views/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/particulars",
+          "pathName": "pages/views/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/classify_msg",
+          "pathName": "pages/views/classify_msg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/add_books",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/add/index",
+          "pathName": "pages/add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/achievement",
+          "pathName": "pages/views/achievement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/particulars",
+          "pathName": "pages/views/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/views/achievement",
+          "pathName": "pages/views/achievement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/add/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/add/edit",
+          "query": "id=6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/add/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/particulars",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/classify_msg",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/user_setting",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/add/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/tally/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/add_books",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/user_setting",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/views/particulars",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

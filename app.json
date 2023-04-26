@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/views/user_setting",
+
+    "pages/tally/index",
+    "pages/stats/index",
+    "pages/add/index",
+    "pages/family/index",
+    "pages/user/index",
+
+    "pages/views/add_books",
+    "pages/views/particulars",
+    "pages/views/classify_msg",
+    "pages/views/login",
+    "pages/add/edit",
+    "pages/loan/index",
+    "pages/views/achievement"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "记账本本",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "color": "#d8d8d8",
+    "selectedColor": "#00a578",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "images/tabbar/tally.png",
+        "selectedIconPath": "images/tabbar/tally-active.png",
+        "pagePath": "pages/tally/index",
+        "text": "记账"
+      },
+      {
+        "iconPath": "images/tabbar/scat.png",
+        "selectedIconPath": "images/tabbar/scat-active.png",
+        "pagePath": "pages/stats/index",
+        "text": "统计"
+      },
+      {
+        "iconPath": "images/tabbar/add.png",
+        "selectedIconPath": "images/tabbar/add-active.png",
+        "pagePath": "pages/add/index",
+        "text": "添加"
+      },
+      {
+        "iconPath": "images/tabbar/family.png",
+        "selectedIconPath": "images/tabbar/family-active.png",
+        "pagePath": "pages/family/index",
+        "text": "家庭"
+      },
+      {
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user-active.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

@@ -1,0 +1,184 @@
+<!--pages/user/index.wxml-->
+<view class="head" style="padding-top:{{menuRect.top}}px;background-image:url({{url}}/public/static/imgs/bg-user.png)">
+    <view class="top" style="height:{{menuRect.height}}px"></view>
+    <view class="portrait">
+      <view class="cover boxshow1"> <image mode="aspectFit" src="{{info.avatar_url}}"></image> </view>
+      <view class="info">
+        <view class="title">
+        
+          {{info.nick_name}}
+        
+          <navigator class="abc" url="/pages/views/user_setting">
+            <van-icon name="setting-o" class="icon-o"/>
+          </navigator>
+
+        </view>
+        <view class="drm">
+          <view wx:if="{{info.sex == 0}}">性别：未知</view>
+          <view wx:if="{{info.sex == 1}}">性别：男</view>
+          <view wx:if="{{info.sex == 2}}">性别：女</view>
+          <view >职业：{{info.job}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="tji">
+      <view class="item">
+        <view class="title">{{tallyTotal.income}}</view>
+        <view class="desc">收入金额/元</view>
+      </view>
+      <view class="item">
+        <view class="title">{{tallyTotal.expend}}</view>
+        <view class="desc">支出金额/元</view>
+      </view>
+      <view class="item">
+        <view class="title">{{tallyTotal.disregard}}</view>
+        <view class="desc">不计收支/元</view>
+      </view>
+    </view>
+</view>
+<!-- 菜单导航 -->
+<view class="navs container">
+  <view class="main boxshow3">
+
+    <navigator url="/pages/views/particulars">
+        <view class="item">
+          <image src="../../images/icon/1.png"></image>
+          <view class="title color2">明细</view>
+        </view>
+    </navigator>
+
+    <view class="item" bindtap="setUrlAddBooks">
+      <image src="../../images/icon/2.png"></image>
+      <view class="title color2">账本</view>
+    </view>
+
+    <navigator url="/pages/views/classify_msg">
+    <view class="item">
+      <image src="../../images/icon/3.png"></image>
+      <view class="title color2">类型</view>
+    </view>
+  </navigator>
+
+  <navigator url="/pages/views/achievement">
+    <view class="item">
+      <image src="../../images/icon/4.png"></image>
+      <view class="title color2">排行</view>
+    </view>
+  </navigator>
+
+  </view>
+</view>
+
+<!-- 内容部分 -->
+<view class="center">
+  <!-- <view class="tabs">
+    <view class="item color5 active">普通账本</view>
+    <view class="item color5">账本2</view>
+    <view class="item color5">账本3</view>
+  </view> -->
+
+  <view class="book">
+    <picker bindchange="bindPickerChange" range-key="name" value="{{index}}" range="{{books}}">
+          <view class="value">{{bookInfo.name || '选择账本'}} <image class="aw" src="../../images/icon/arrow.png"></image>  </view>
+    </picker>
+    
+  </view>
+
+  <view class="ntj">
+    <view class="main boxshow3">
+      <van-icon name="play" class="arrow"/>
+
+      <view class="item a1">
+        <view class="name">{{formTj.date_year_lebal || '请选择'}}</view>
+        <picker bindchange="bindPickerChangeDate" mode="date">
+        <view class="value">{{formTj.date_lebal || '请选择'}} <image class="aw" src="../../images/icon/arrow.png"></image>  </view>
+      </picker>
+
+        
+      </view>
+
+      <view class="item">
+        <view class="name">收入/元</view>
+        <view class="value">{{tongji.income || '--'}}</view>
+      </view>
+
+      <view class="item">
+        <view class="name">支出/元</view>
+        <view class="value">{{tongji.expend || '--'}}</view>
+      </view>
+
+      <view class="item">
+        <view class="name">不计/元</view>
+        <view class="value">{{tongji.disregard || '--'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="container app-list">
+    <view class="top">
+      <view class="name color2"> <view class="app-ii"></view> 12月预算 </view>
+      <view class="hint"> <van-icon class="r-icon ll" name="play-circle" /> <van-icon class="r-icon" name="play-circle" /> </view>
+    </view>
+    <view class="main">
+      <view class="item a1">
+        <view class="bnt-yuan">本月预算/元</view>
+        <view class="value">230</view>
+      </view>
+      <view class="item a2">
+        <view class="dd">
+          <view class="line"></view>
+
+          <van-icon class="icon" name="gold-coin" />
+        </view>
+        <view class="value"> <text class="hint">已支出：</text>  3680</view>
+      </view>
+      <view class="item a3">
+        <view class="bnt-yuan">剩余预算/元</view>
+        <view class="value">230</view>
+      </view>
+    </view>
+
+  </view> -->
+
+
+  <view class="navs container app-list" style="margin-top:0">
+    <view class="top">
+      <view class="name color2"> <view class="app-ii"></view> 福利工具 </view>
+   
+    </view>
+    <view class="main">
+
+      <view class="item" bindtap="setLoan">
+        <image src="../../images/icon/icon1.png"></image>
+        <view class="title color2">房贷计算</view>
+      </view>
+
+      <view class="item">
+        <image src="../../images/icon/icon1.png"></image>
+        <view class="title color2">工资计算</view>
+      </view>
+
+      <view class="item">
+        <image src="../../images/icon/icon1.png"></image>
+        <view class="title color2">汇率转换</view>
+      </view>
+
+      <view class="item">
+        <image src="../../images/icon/icon1.png"></image>
+        <view class="title color2">去水印</view>
+      </view>
+
+
+    </view>
+
+  </view>
+
+
+
+</view>
+
+
+<!-- 占位 -->
+<view class="app-zw-bc"></view>
+<view class="app-zw"></view>

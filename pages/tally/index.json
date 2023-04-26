@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "日常记账",
+  "navigationStyle": "custom"
+}

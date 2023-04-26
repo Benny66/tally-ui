@@ -1,0 +1,141 @@
+/* pages/tally/index.wxss */
+.head{
+  display: flex;
+  align-items: center;
+}
+.head .icon{
+  width: 140rpx;
+}
+.head .info{
+
+}
+.head .info .title{
+  font-size: 42rpx;
+  font-weight: bold;
+}
+.head .info .desc{
+  font-size: 24rpx;
+  line-height: 48rpx;
+}
+
+.bills{
+  padding-right: 21rpx;
+  padding-left: 21rpx;
+  
+}
+.bills .main{
+  width: 994rpx;
+  padding: 30rpx 0;
+  display: inline-block;
+  /* height: 274rpx; */
+  /* display: flex;
+  align-items: baseline; */
+}
+.bills .item{
+  width: 166rpx;
+  height: 197rpx;
+  float: left;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+  background-size: cover;
+  border-radius:16rpx;
+  background-position: center;
+  /* overflow: hidden; */
+  box-shadow: 0rpx 0rpx 14rpx #f0f1f3;
+  position: relative;
+  margin-top: 17.5rpx;
+}
+.bills .item.active{
+  width: 190rpx;
+  height: 232rpx;
+  margin-top: 0;
+  border-radius: 24rpx;
+  box-shadow: 8px 4px 18px 0px rgba(0,165,120,0.19);
+}
+.bills .item.active .name{
+  margin-top: 55rpx;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .3), rgba(255, 255, 255, .1));
+}
+.bills .item .name{
+  font-size: 22rpx;
+  color: #ffffff;
+  height: 36rpx;
+  line-height: 36rpx;
+  width: 70%;
+  background: rgba(0, 0, 0, .1);
+  margin-left: 15%;
+  margin-top: 40rpx;
+  border-radius: 32rpx;
+  text-align: center;
+}
+.bills .item.add{
+  border: 1px dotted #d9d9d9;
+  box-sizing: border-box;
+  background: #f8f8f8;
+}
+.bills .item.add .name{
+  background: none;
+  font-size: 28rpx;
+  color: #adaeae;
+  font-weight: bold;
+}
+.bills .item.add .jia{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 24rpx;
+  border: 2px solid #ffffff;
+  background: #a5acab;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistical{
+  /* padding-top: 20rpx; */
+  margin-top: 20rpx;
+  position: relative;
+}
+.statistical .play{
+  position: absolute;
+  font-size: 32rpx;
+  left: 120rpx;
+  top:  -20rpx;
+  transform: rotate(270deg);
+}
+.statistical .main{
+  width: 100%;
+  height: 192rpx;
+  background-size: cover;
+  border-radius: 12rpx 40rpx 12rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 32rpx;
+  box-sizing: border-box;
+  box-shadow: 8px 4px 18px 0px rgba(0,165,120,0.19);
+}
+.statistical .main .ll{
+  padding-left: 35rpx;
+}
+.statistical .main .ll .num{
+  font-weight: bold;
+  font-size: 48rpx;
+  line-height: 58rpx;
+  color: #ffffff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.statistical .main .desc{
+  font-size: 28rpx;
+  margin-top: 22rpx;
+}
+.statistical .main .desc .sub-num{
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+

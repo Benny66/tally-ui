@@ -1,0 +1,43 @@
+<!--pages/views/add_books.wxml-->
+<view class="books">
+  <view class="h-title">添加/修改账本</view>
+    <!-- 账单滚动 -->
+    <view class="container bills">
+      <scroll-view scroll-x="true" style="width: 100%">
+        <view class="main" style="width:{{bmw}}rpx">
+
+          <view bindtap="setTab" data-id="{{''}}" class="item add {{book_id?'':'active'}}">
+            <view class="name">添加</view>
+            <view class="jia"><van-icon name="plus" /></view>
+          </view>
+
+          <view bindtap="setTab" data-id="{{item.id}}" class="item {{book_id == item.id?'active':''}}" wx:for="{{books}}" style="background-image:url({{url}}/public/static/imgs/{{book_id == item.id?'book-active1':'book'}}.png)">
+            <view class="name">{{item.name}}</view>
+          </view>
+
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- 添加 编辑账单 -->
+    <view class="container app-list">
+        <view class="top">
+          <view class="name color2"> <view class="app-ii"></view> 设置账本信息 </view>
+          <view class="hint">  </view>
+        </view>
+
+        <view class="form">
+          <view class="item">
+            <input maxlength="52" bindinput="setInput" data-key="name" value="{{form.name}}" placeholder="请输入账本名称" />
+          </view>
+          <view class="item">
+            <input maxlength="52" bindinput="setInput" data-key="sort" type="number" value="{{form.sort}}" placeholder="请输入排序（数字越小越靠前）" />
+          </view>
+
+        </view>
+        <view class="confirm">
+          <van-button color="#33b793" type="primary" block bindtap="saveBook">确 定</van-button>
+        </view>
+    </view>
+
+</view>

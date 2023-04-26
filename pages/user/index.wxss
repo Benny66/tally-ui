@@ -1,0 +1,325 @@
+/* pages/user/index.wxss */
+page{
+  background: #f9f9f9;
+}
+.head{
+  width: 100%;
+  height: 670rpx;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: right;
+  border-radius: 0 0 0rpx 160rpx;
+}
+.head .top{
+  /* padding-left: 36rpx; */
+  font-weight: 400;
+  font-size: 42rpx;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  /* padding-right: 250rpx; */
+}
+.head .portrait{
+  padding-left: 36rpx;
+  display: flex;
+  margin-top: 40rpx;
+}
+.head .portrait .cover{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 6rpx solid #70c7b7;
+  overflow: hidden;
+}
+.head .portrait .cover image{
+  width: 100%;
+  height: 100%;
+}
+.head .info{
+  padding-left: 34rpx;
+  padding-top: 15rpx;
+  flex: 1;
+}
+.head .info .title{
+  font-size: 44rpx;
+  padding-right: 36rpx;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head .info .title .abc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head .info .title .icon-o{
+  font-size: 44rpx;
+}
+.head .info .drm{
+  padding-top: 16rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+.head .info .tag{
+  margin-top: 10rpx;
+  position: relative;
+  margin-left: 10rpx;
+  width: 130rpx;
+  height: 36rpx;
+  font-size: 20rpx;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 36rpx;
+  text-align: right;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  line-height: 36rpx;
+  display: none;
+  
+}
+.head .info .tag.active{
+  display: block;
+}
+.head .info .tag.v1{
+  background: linear-gradient(97deg, #d7dcdf 0%, #cfd4da 29%, #889198 100%);
+}
+.head .info .tag.v2{
+  background: linear-gradient(97deg, #c4d7e0 0%, #c2cddf 29%, #829bb3 100%);
+}
+.head .info .tag.v3{
+  background: linear-gradient(97deg, #fee0a4 0%, #fdc438 29%, #c88c34 100%);
+}
+.head .info .tag.v4{
+  background: linear-gradient(97deg, #eeead7 0%, #c3b59a 29%, #a48f6e 100%);
+}
+.head .info .tag image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: -20rpx;
+  top: -7rpx;
+}
+.head .tji{
+  padding: 60rpx 60rpx 0 60rpx;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head .tji .item{
+  text-align: center;
+}
+.head .tji .item .title{
+  font-size: 46rpx;
+  font-weight: bold;
+  text-shadow: 2px 3px 1px #00a578;
+}
+.head .tji .item .desc{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+
+.navs{
+  margin-top: -172rpx;
+}
+.navs .main{
+  background: #ffffff;
+  height: 220rpx;
+  position: relative;
+  z-index: 100;
+  border-radius: 30rpx;
+  display: flex;
+  padding: 0 50rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.navs .main .item{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.navs .main .item image{
+  width: 92rpx;
+  height: 92rpx;
+}
+.navs .main .item .title{
+  font-size: 28rpx;
+  margin-top: 16rpx;
+}
+
+.center{
+  /* background: #ffffff; */
+  border-radius: 120rpx 120rpx 0 0;
+  position: relative;
+  z-index: 99;
+  margin-top: -155rpx;
+  padding-top: 190rpx;
+}
+
+.tabs{
+  padding: 36rpx;
+  padding-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.tabs .item{
+  font-size: 30rpx;
+  margin-right: 30rpx;
+}
+.tabs .item.active{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #232A24;
+}
+
+.ntj{
+  padding: 36rpx;
+  padding-top:20rpx;
+  padding-bottom: 0;
+}
+.ntj .main{
+  height: 200rpx;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ntj .main .arrow{
+  font-size: 50rpx;
+  color: #ffffff;
+  position: absolute;
+  transform: rotate(270deg);
+  left: 50rpx;
+  top: -30rpx;
+}
+.ntj .main .item{
+  flex: 1;
+  text-align: center;
+}
+.ntj .main .item.a1{
+  padding-right: 30rpx;
+  border-right: 2rpx solid #F2F6FC;
+}
+.ntj .main .item .name{
+  color: #ADAEAE;
+  font-size: 26rpx;
+ 
+}
+.ntj .main .item .value .aw{
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  bottom: 0;
+  right: 0;
+}
+.ntj .main .item .value{
+    color: #232A24;
+    font-weight: bold;
+    font-size: 36rpx;
+    margin-top: 20rpx;
+    position: relative;
+}
+.app-list .hint{
+  display: flex;
+  align-items: center;
+}
+.app-list .r-icon{
+  font-size: 38rpx;
+}
+.app-list .r-icon.ll{
+  margin-right: 20rpx;
+  transform: rotate(180deg);
+}
+.app-list .main{
+  height: 200rpx;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 36rpx;
+}
+.app-list .main .item{
+  flex:0 auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-list .main .item.a2{
+  flex: 1;
+}
+.app-list .main .item .bnt-yuan{
+  width: 160rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: #232A24;
+  background: #ffffff;
+  border: 2rpx solid #EBEEF5;
+  border-radius: 40rpx;
+}
+.app-list .main .item .dd{
+  height: 48rpx;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-list .main .item .dd .line{
+  width: 100%;
+  position: absolute;
+  border-top: 2rpx dotted #EBEEF5;
+  left: 0;
+  top: 23rpx;
+}
+.app-list .main .item .dd .icon{
+  font-size: 52rpx;
+  color: #00a578;
+}
+.app-list .main .item .value{
+  color: #232A24;
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-top: 30rpx;
+  position: relative;
+  display: flex;
+}
+.app-list .main .item .value .hint{
+  font-size: 24rpx;
+  font-weight: 400;
+}
+.app-list .main .item.a3 .bnt-yuan{
+  border-color: #00a578;
+  color: #00a578;
+}
+
+.book{
+  padding: 0 0 20rpx 36rpx;
+}
+.book .value{
+  color: #232A24;
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-top: 20rpx;
+  position: relative;
+  display: inline-block;
+  padding-right: 30rpx;
+}
+.book .value .aw{
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  bottom: 0;
+  right: 0;
+}

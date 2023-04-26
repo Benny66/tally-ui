@@ -1,0 +1,75 @@
+<!--pages/add/index.wxml-->
+<view>
+
+  <view class="h-title">添加记账</view>
+  <!-- 记账全局弹框 -->
+  <view class="tally">
+    <view class="book">
+      <picker bindchange="bindPickerChange" range-key="name" value="{{index}}" range="{{books}}">
+            <view class="value">{{bookInfo.name || '选择账本'}} <image class="aw" src="../../images/icon/arrow.png"></image>  </view>
+      </picker>
+      
+    </view>
+    <view class="navs">
+      <view class="item {{form.type == 1?'active':''}}" bindtap="setNav" data-value="{{1}}">支出</view>
+      <view class="item {{form.type == 2?'active':''}}" bindtap="setNav" data-value="{{2}}">收入</view>
+      <view class="item {{form.type == 3?'active':''}}" bindtap="setNav" data-value="{{3}}">不计收支</view>
+
+      
+      <view class="item date">
+        <picker bindchange="bindPickerChangeDate" mode="date">
+          {{form.date_lebal || '选择日期'}} <van-icon class="arrow" name="play" />
+      </picker>
+      </view>
+    </view>
+
+
+    <view class="form">
+      <view class="lebal">￥</view>
+      <view class="value">
+        <input type="digit" value="{{form.money}}" bindinput="setMoney" placeholder-class="plac" placeholder="请输入金额"/>
+      </view>
+    </view>
+
+
+
+    <view class="classify">
+
+      <view class="item {{item.id === form.category_id?'active':''}}" wx:for="{{categorys}}" bindtap="setcategory" data-id="{{item.id}}">
+        <view class="cover" style="background-image: url({{item.icon_url}});"></view>
+        <view class="name">{{item.name}}</view>
+      </view>
+
+      <view class="item zw" wx:for="{{5}}">
+        <view class="abc"></view>
+       </view>
+
+    </view>
+
+    <view class="remark">
+      <text class="add">名称</text>
+      <view class="iput">
+        <input value="{{form.name}}" bindinput="setName" placeholder-class="plac" placeholder="请输入名称" />
+      </view>
+    </view>
+
+    <view class="remark" style="margin-top: 30rpx;">
+      <text class="add">备注</text>
+      <view class="iput">
+        <textarea value="{{form.desc}}" bindinput="setDesc" auto-height placeholder-class="plac" placeholder="请输入备注" />
+      </view>
+    </view>
+
+
+    <view class="confirm">
+      <van-button color="#33b793" type="primary" bindtap="tijiao" block>确 定</van-button>
+    </view>
+
+
+  </view>
+
+
+
+</view>
+<view class="app-zw-bc"></view>
+<view class="app-zw"></view>

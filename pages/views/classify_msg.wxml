@@ -1,0 +1,55 @@
+<!--pages/views/classify_msg.wxml-->
+<view class="list">
+
+  <view class="title">分类管理</view>
+  <view class="hint">
+    轻触分类即可编辑，点击添加即可添加分类
+  </view>
+
+  <view class="navs">
+      <view bindtap="setTab" data-key="{{1}}" class="item {{type == 1?'active':''}} ">支出</view>
+      <view bindtap="setTab" data-key="{{2}}" class="item {{type == 2?'active':''}}">收入</view>
+      <view bindtap="setTab" data-key="{{3}}" class="item {{type == 3?'active':''}}">不计入收支</view>
+    </view>
+
+
+  <view class="classify">
+
+    <view class="item" wx:for="{{categorys}}" bindtap="editItem" data-item="{{item}}">
+      <view class="cover" style="background-image: url({{item.icon_url}});"></view>
+      <view class="name">{{item.name}}</view>
+    </view>
+
+    <view class="item" bindtap="addCf">
+      <view class="cover">
+        <van-icon name="add" style="font-size:82rpx;color:#ADAEAE"/>
+      </view>
+      <view class="name">添加</view>
+    </view>
+
+
+    <view class="item zw" wx:for="{{5}}">
+      <view class="abc"></view>
+    </view>
+
+    </view>
+
+    <van-popup
+      show="{{ isShow }}"
+      position="bottom"
+      round
+      bind:close="onClose"
+    >
+      <view class="main-bb">
+        <view class="form" style="margin-bottom: 36rpx;">
+          <view class="lebal">名称</view>
+          <view class="value">
+            <input bindinput="sbnn" value="{{form.name}}" placeholder-class="plac" placeholder="请输入分类名称"/>
+          </view>
+        </view>
+        <van-button type="primary" size="large" bindtap="saveForm">保存分类</van-button>
+      </view>
+    </van-popup>
+
+</view>
+

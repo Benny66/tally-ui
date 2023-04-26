@@ -1,0 +1,102 @@
+/* pages/views/add_books.wxss */
+.h-title{
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #232A24;
+  padding-left: 36rpx;
+  padding-top: 30rpx;
+}
+.bills{
+  padding-right: 21rpx;
+  padding-left: 21rpx;
+  padding-top: 40rpx;
+}
+.bills .main{
+  /* width: 994rpx; */
+  padding: 30rpx 0;
+  display: inline-block;
+  /* height: 274rpx; */
+  /* display: flex;
+  align-items: baseline; */
+}
+.bills .item{
+  width: 166rpx;
+  height: 197rpx;
+  float: left;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+  background-size: cover;
+  border-radius:16rpx;
+  background-position: center;
+  /* overflow: hidden; */
+  box-shadow: 0rpx 0rpx 14rpx #f0f1f3;
+  position: relative;
+  margin-top: 17.5rpx;
+}
+.bills .item.active{
+  width: 190rpx;
+  height: 232rpx;
+  margin-top: 0;
+  border-radius: 24rpx;
+  box-shadow: 8px 4px 18px 0px rgba(0,165,120,0.19);
+}
+.bills .item.active .name{
+  margin-top: 55rpx;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .3), rgba(255, 255, 255, .1));
+}
+.bills .item .name{
+  font-size: 22rpx;
+  color: #ffffff;
+  height: 36rpx;
+  line-height: 36rpx;
+  width: 70%;
+  background: rgba(0, 0, 0, .1);
+  margin-left: 15%;
+  margin-top: 40rpx;
+  border-radius: 32rpx;
+  text-align: center;
+}
+.bills .item.add{
+  border: 1px dotted #d9d9d9;
+  box-sizing: border-box;
+  background: #f8f8f8;
+}
+.bills .item.add.active{
+  border: 1px dotted #00a578;
+}
+.bills .item.add .name{
+  background: none;
+  font-size: 28rpx;
+  color: #adaeae;
+  font-weight: bold;
+}
+.bills .item.add .jia{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 24rpx;
+  border: 2px solid #ffffff;
+  background: #a5acab;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  padding-top: 30rpx;
+}
+.form .item{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #f8f8f8;
+}
+.form .item input{
+  font-size: 28rpx;
+  color: #232A24;
+}
+.confirm{
+  padding-top: 68rpx;
+}

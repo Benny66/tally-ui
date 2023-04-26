@@ -1,0 +1,70 @@
+<view class="header">
+  <view class="title">贷款计算器</view>
+</view>
+
+<view class="content">
+  <view class="form-item">
+    <view class="label">贷款金额：</view>
+    <input type="number" class="input" placeholder="请输入贷款金额" bindinput="onAmountChange" />
+  </view>
+  
+  <view class="form-item">
+    <view class="label">贷款期数/月：</view>
+    <picker mode="selector" range="{{periodOptions}}" bindchange="onPeriodChange">
+      <view class="picker">{{selectedPeriod}}</view>
+    </picker>
+  </view>
+  
+  <view class="form-item">
+    <view class="label">月利率：</view>
+    <input type="number" class="input" placeholder="请输入月利率" bindinput="onRateChange" />
+  </view>
+  
+  <view class="form-item">
+    <view class="label">还款方式：</view>
+    <picker mode="selector" range="{{repaymentOptions}}" bindchange="onRepaymentChange">
+      <view class="picker">{{selectedRepayment}}</view>
+    </picker>
+  </view>
+  
+  <view class="form-item">
+    <view class="label">每月应还款日：</view>
+    <input type="number" class="input" placeholder="请输入每月应还款日" bindinput="onDueDayChange" />
+  </view>
+
+  <view class="btn-container">
+    <button class="btn-calculate" bindtap="calculate">计算</button>
+  </view>
+
+  <scroll-view class="result-container" scroll-y="true">
+    <view class="result-header">
+      <view class="result-title">{{selectedRepayment}}</view>
+      <view class="result-menu">
+        <view class="menu-item" bindtap="switchResultTab" data-tab="0">总还款金额</view>
+        <view class="menu-item" bindtap="switchResultTab" data-tab="1">每月还款详情</view>
+      </view>
+    </view>
+
+    <view class="result-body">
+      <view class="result-tab" hidden="{{currentTab != 0}}">
+        <view class="result-item">
+          <view class="item-label">总还款金额：</view>
+          <view class="item-value">{{totalAmount}}</view>
+        </view>
+      </view>
+
+      <view class="result-tab" hidden="{{currentTab != 1}}">
+        <view class="result-item result-item-header">
+          <view class="item-label">还款期数</view>
+          <view class="item-label">每月应还金额</view>
+          <view class="item-label">剩余本金</view>
+        </view>
+        <view class="result-item" wx:for="{{repaymentDetails}}" wx:key="index">
+          <view class="item-value">{{item.period}}</view>
+          <view class="item-value">{{item.monthlyPayment}}</view>
+          <view class="item-value">{{item.remainingPrincipal}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

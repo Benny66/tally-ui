@@ -1,0 +1,116 @@
+<!--pages/tally/index.wxml-->
+<view class="head" style="padding-top:{{menuRect.top}}px;padding-left:{{menuRect.borderWidth}}px">
+  <image class="icon" mode="widthFix" src="{{weather}}"></image>
+  <!-- <view style="width:36rpx"></view> -->
+  <view class="info">
+    <view class="title color2">Hi, {{hi}}</view>
+    <view class="desc color3">{{yud}} {{hint}}</view>
+  </view>
+</view>
+
+<!-- 账单滚动 -->
+<view class="container bills">
+  <scroll-view scroll-x="true" style="width: 100%">
+    <view class="main" style="width:{{bmw}}rpx">
+
+      <view class="item {{!book_id?'active':''}}" bindtap="setTab" data-id="{{null}}" style="background-image:url({{url}}/public/static/imgs/{{!book_id?'book-active1':'book'}}.png)">
+        <view class="name">全部账单</view>
+      </view>
+
+      <view class="item {{book_id == item.id?'active':''}}" bindtap="setTab" data-id="{{item.id}}" wx:for="{{books}}" style="background-image:url({{url}}/public/static/imgs/{{book_id == item.id?'book-active1':'book'}}.png)">
+        <view class="name">{{item.name}}</view>
+      </view>
+
+      <view class="item add" bindtap="setUrlAddBooks">
+        <view class="name">添加</view>
+        <view class="jia">
+          <van-icon name="plus" />
+        </view>
+      </view>
+
+
+
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 账单统计 -->
+<view class="container statistical">
+  <van-icon name="play" color="#00a578" class="play" />
+  <view class="main" style="background-image:url({{url}}/public/static/imgs/bg1.png)">
+    <view class="ll">
+      <view class="num">{{tallyTotal.expend}}</view>
+      <view class="desc color4">当月支出/元</view>
+    </view>
+    <view style="padding-right: 42rpx;">
+      <view class="desc color4" style="line-height: 58rpx;margin-top:0">当月收入/元 <text class="sub-num color6">{{tallyTotal.income}}</text> </view>
+      <view class="desc color4">不计收支/元 <text class="sub-num color6">{{tallyTotal.disregard}}</text></view>
+    </view>
+  </view>
+</view>
+
+<!-- 通用列表 -->
+<block wx:if="{{list1.length > 0}}">
+  <view class="container app-list">
+    <view class="top">
+      <view class="name color2">
+        <view class="app-ii"></view> 今天
+      </view>
+      <view class="hint"> <text>收 {{statis.jins}}</text>，<text>支 {{statis.jinz}}</text> </view>
+    </view>
+    <view class="main">
+      <navigator url="/pages/add/edit?id={{item.id}}" wx:for="{{list1}}">
+        <view class="item">
+          <image src="{{item.category_info.icon_url}}" class="icon"></image>
+          <view class="info van-hairline--bottom">
+            <view class="title color2">{{item.category_info.name}} ~ {{item.name}}</view>
+            <view class="date color3">{{item.str_time}}</view>
+            <text class="money">
+              <text wx:if="{{item.type == 1}}" class="color-zc">-{{item.money}}</text>
+              <text wx:if="{{item.type == 2}}" class="color-sr">+{{item.money}}</text>
+              <text wx:if="{{item.type == 3}}" class="color-zc">.{{item.money}}</text>
+            </text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</block>
+<block wx:if="{{list2.length > 0}}">
+  <view class="container app-list">
+    <view class="top">
+      <view class="name color2">
+        <view class="app-ii"></view> 昨天
+      </view>
+      <view class="hint"> <text>收 {{statis.zuos}}</text>，<text>支 {{statis.zuoz}}</text> </view>
+    </view>
+    <view class="main">
+      <navigator url="/pages/add/edit?id={{item.id}}" wx:for="{{list2}}">
+        <view class="item">
+          <image src="{{item.category_info.icon_url}}" class="icon"></image>
+          <view class="info van-hairline--bottom">
+            <view class="title color2">{{item.category_info.name}}~ {{item.name}}</view>
+            <view class="date color3">{{item.str_time}}</view>
+            <text class="money">
+              <text wx:if="{{item.type == 1}}" class="color-zc">-{{item.money}}</text>
+              <text wx:if="{{item.type == 2}}" class="color-sr">+{{item.money}}</text>
+              <text wx:if="{{item.type == 3}}" class="color-zc">.{{item.money}}</text>
+            </text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</block>
+
+<!-- 空 -->
+<block wx:if="{{list1.length <= 0 && list2.length <= 0}}">
+  <van-empty description="没有记账数据">
+    <van-button round color="#00a578" bindtap="setJiZhang" type="danger" class="bottom-button">立即记账</van-button>
+  </van-empty>
+</block>
+
+<!-- <view style="height: 40rpx;"></view> -->
+<!-- 占位 -->
+<view class="app-zw-bc"></view>
+<view class="app-zw"></view>
