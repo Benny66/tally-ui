@@ -5,7 +5,7 @@ App({
   },
   globalData: {
     // api_base_url: 'http://127.0.0.1:8080', // 开发环境
-    api_base_url: 'http://xxx', // 生产环境
+    api_base_url: 'http://xxxx', // 生产环境
     menuRect: {}
   },
   // 获取导航信息

@@ -1,13 +1,11 @@
 {
   "pages": [
-    "pages/views/user_setting",
-
     "pages/tally/index",
     "pages/stats/index",
     "pages/add/index",
     "pages/family/index",
     "pages/user/index",
-
+    "pages/views/user_setting",
     "pages/views/add_books",
     "pages/views/particulars",
     "pages/views/classify_msg",
@@ -19,7 +17,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "记账本本",
+    "navigationBarTitleText": "天天记账生活小工具plus",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
