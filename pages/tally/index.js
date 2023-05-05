@@ -41,11 +41,12 @@ Page({
     this.books()
     this.getTallyTotal()
     this.getList()
+    
   },
   getWeather() {
     
     app.ajaxPost('/api/get-weather', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           weather: res.data
         })
@@ -60,7 +61,7 @@ Page({
   },
   wish() {
     app.ajaxPost('/api/benediction', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           hint: res.data.phrase
         })
@@ -77,7 +78,7 @@ Page({
   },
   books() {
     app.ajaxPost('/api/get-user-book', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         let w = res.data.length * 193 + 228 + 193
         this.setData({
           bmw: w,
@@ -105,7 +106,7 @@ Page({
       end_time:time,
       book_id: this.data.book_id || ''
     }, (res)=>{
-      if(res.code === 200 && res.data !== null){
+      if(res.code === 0 && res.data !== null){
         res.data.forEach(v => { 
           if(v.type == 1){
             statis.jinz = statis.jinz + Number(v.money)
@@ -134,7 +135,7 @@ Page({
       end_time:timezuo,
       book_id: this.data.book_id || ''
     }, (res)=>{
-      if(res.code === 200 && res.data !== null){
+      if(res.code === 0 && res.data !== null){
         res.data.forEach(v => { 
           if(v.type == 1){
             statis.zuoz = statis.zuoz + Number(v.money)
@@ -164,8 +165,7 @@ Page({
       end_time:end_time,
       book_id: this.data.book_id || ''
     }, (res)=>{
-      if(res.code === 200){
-        console.log(res.data)
+      if(res.code === 0){
         res.data.disregard = toThousands(res.data.disregard)
         res.data.expend = toThousands(res.data.expend)
         res.data.income = toThousands(res.data.income)

@@ -56,7 +56,7 @@ Page({
     const obj = this.data.form
     if(obj.type && obj.start_time && obj.end_time) {
       app.ajaxPost('/api/get-tally-main-list', obj, (res)=>{
-        if(res.code === 200 && res.data !== null){
+        if(res.code === 0 && res.data !== null){
           res.data.forEach(v => { 
    
             v.money = toThousands(v.money);v.str_time = v.created_at } )

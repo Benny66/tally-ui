@@ -6,7 +6,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    info: {}
+    info: {},
+    sexes:[
+      {
+        "type":0,
+        "name":"未知",
+      },
+      {
+        "type":1,
+        "name":"男",
+      },
+      {
+        "type":2,
+        "name":"女",
+      },
+    ]
   },
 
   /**
@@ -25,9 +39,8 @@ Page({
     console.log(e)
   },
   setUpdateInfo() {
-    
     app.ajaxPost('/api/set-user-info', this.data.info, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         wx.showToast({
           title: '更新成功',
         })
@@ -45,52 +58,55 @@ Page({
     })
   },
   getInfo() {
-    
     app.ajaxPost('/api/get-user-info', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
+        let userInfo = res.data
+        userInfo.sex_desc = this.getSexInfo(userInfo.sex)
         this.setData({
-          info: res.data
+          info: userInfo
         })
       }
     })
   },
-  onChooseAvatar(e) {
-    const { avatarUrl } = e.detail 
+  bindSex:function(e){
+    const sexes = this.data.sexes
+    const index = e.detail.value
+    console.log(this.data.info)
+    console.log(index)
+    console.log(sexes[index])
     this.setData({
-        ['info.avatar_url']: avatarUrl
-    });
+      ['info.sex_desc']: sexes[index].name,
+      ['info.sex']: index,
+    })
   },
-  upimg() {
+  getSexInfo(sex){
+    if(sex === 1) {
+      return "男"
+    }else if (sex === 2) {
+      return "女"
+    }
+    return "未知"
+  },
+  onChooseAvatar(e) {
     const _this = this
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
-      success (res) {
-        // tempFilePath可以作为img标签的src属性显示图片
-        const tempFilePaths = res.tempFilePaths[0]
+    const { avatarUrl } = e.detail 
+    // tempFilePath可以作为img标签的src属性显示图片
+    // const tempFilePaths = res.tempFilePaths[0]
+    wx.uploadFile({
+      url: getApp().globalData.api_base_url+'/api/upload-file', //接受图片的接口地址
+      header: {
+        chartset: "utf-8",
+        "content-type": "multipart/form-data"
+      },
+      filePath: avatarUrl,
+      name: 'file',
+      success (res){
+          const data = JSON.parse(res.data)
+          _this.setData({
+            ['info.avatar_url']: data.data
+          })
 
-        wx.uploadFile({
-          url: getApp().globalData.api_base_url+'/api/upload-file', //接受图片的接口地址
-          header: {
-            chartset: "utf-8",
-            "content-type": "multipart/form-data"
-          },
-          filePath: tempFilePaths,
-          name: 'file',
-          success (res){
-              console.log(res);
-              const data = JSON.parse(res.data)
-              _this.setData({
-                ['info.avatar_url']: data.data
-              })
-
-              // //do something
-          }
-      })
-
-
-
+          // //do something
       }
     })
   },

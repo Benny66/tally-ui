@@ -65,7 +65,7 @@ Page({
   getInfo() {
    
     app.ajaxPost('/api/get-tally-info', {id: this.data.form.id}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         let item = this.data.books.find(v=>v.id = res.data.book_id)
         let index = this.data.books.findIndex(v=>v.id = res.data.book_id)
         res.data.date_lebal = formatTimeTwo(res.data.date, 'M月D日'),
@@ -79,7 +79,7 @@ Page({
   },
   books() {
     app.ajaxPost('/api/get-user-book', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           books: res.data,
         })
@@ -112,7 +112,7 @@ Page({
   categorys() {
     
     app.ajaxPost('/api/get-category-list', {type: this.data.form.type}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           categorys: res.data,
         })
@@ -181,7 +181,7 @@ Page({
       // 提交
       
       app.ajaxPost('/api/set-tally-edit', this.data.form, (res)=>{
-        if(res.code === 200){
+        if(res.code === 0){
           wx.showToast({
             icon: 'none',
             title: '成功，即将返回',

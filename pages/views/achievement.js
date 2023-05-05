@@ -57,7 +57,7 @@ Page({
       type:this.data.formTj.type,
       date:this.data.formTj.date,
     }, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           list: res.data
         })

@@ -30,7 +30,7 @@ Page({
   },
   books() {
     app.ajaxPost('/api/get-user-book', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         let w = res.data.length * 193 + 228
         this.setData({
           bmw: w,
@@ -51,7 +51,7 @@ Page({
     const id = this.data.book_id
     if(id){
       app.ajaxPost('/api/get-book-info', {id: this.data.book_id}, (res)=>{
-        if(res.code === 200){
+        if(res.code === 0){
           this.setData({
             form: {
               name: res.data.name,
@@ -88,7 +88,7 @@ Page({
       return false
     }
     app.ajaxPost('/api/set-book-edit',form, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         wx.showToast({
           icon: 'none',
           title: '提交成功',

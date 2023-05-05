@@ -63,7 +63,7 @@ Page({
   },
   books() {
     app.ajaxPost('/api/get-user-book', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         var bookId = 0
         console.log(res.data.length)
         if (res.data.length > 0) {
@@ -102,7 +102,7 @@ Page({
   // 获取分类
   categorys() {
     app.ajaxPost('/api/get-category-list', {type: this.data.form.type}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         var categoryId = 0
         if (res.data.length > 0) {
           const randomValue = res.data[0];
@@ -178,7 +178,7 @@ Page({
       // 提交
       
       app.ajaxPost('/api/set-tally-edit', this.data.form, (res)=>{
-        if(res.code === 200){
+        if(res.code === 0){
           wx.showToast({
             icon: 'none',
             title: '添加成功',

@@ -42,7 +42,7 @@ Page({
   },
   books() {
     app.ajaxPost('/api/get-user-book', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           books: res.data,
         })
@@ -74,7 +74,7 @@ Page({
     app.ajaxPost('/api/get-tally-main-total', {
 
     }, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
 
         res.data.disregard = toThousands(res.data.disregard)
         res.data.expend = toThousands(res.data.expend)
@@ -97,7 +97,7 @@ Page({
       query.date = obj.date
 
       app.ajaxPost('/api/get-tally-main-total', obj, (res)=>{
-        if(res.code === 200){
+        if(res.code === 0){
           this.setData({
             tongji: {
               disregard: toThousands(res.data.disregard),
@@ -117,7 +117,7 @@ Page({
   
   getInfo() {
     app.ajaxPost('/api/get-user-info', {}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           info: res.data
         })

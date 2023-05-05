@@ -25,7 +25,7 @@ Page({
   categorys() {
     
     app.ajaxPost('/api/get-category-list', {type: this.data.type}, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.setData({
           categorys: res.data,
         })
@@ -69,7 +69,7 @@ Page({
 
     
     app.ajaxPost('/api/set-category-edit',obj, (res)=>{
-      if(res.code === 200){
+      if(res.code === 0){
         this.categorys()
         this.setData({
           isShow: false

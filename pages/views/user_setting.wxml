@@ -4,28 +4,29 @@
 
       <view class="head boxshow3">
         <image mode="aspectFit" src="{{info.avatar_url}}"></image>
-        <image class="icon" open-type="chooseAvatar" bindtap="upimg" src="../../images/icon/paiz.png"></image>
+        <!-- <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+          <image class="icon"  src="../../images/icon/paiz.png"></image>
+        </button>  -->
+
       </view>
 
       <view class="item">
         <view class="hint">昵称</view>
         <view class="value">
-          <input type="text" placeholder="请输入昵称" bindinput="setInpt" data-key="nick_name" value="{{info.nick_name}}" placeholder-class="plac"/>
-          <van-icon name="arrow" class="arrow"/>
+          <input type="nickname" placeholder="请输入昵称"  bindchange="setInpt" data-key="nick_name" value="{{info.nick_name}}" placeholder-class="plac"/>
         </view>
       </view>
       <view class="item">
         <view class="hint">性别</view>
-        <view class="value">
-          <input type="text" placeholder="请输入性别" bindinput="setInpt" data-key="sex" value="{{info.sex}}" placeholder-class="plac"/>
-          <van-icon name="arrow" class="arrow"/>
-        </view>
+        <picker class="value" bindchange="bindSex" range-key="name" value="{{index}}" range="{{sexes}}" placeholder-class="plac" > 
+          <view>{{info.sex_desc || '选择性别'}}
+          </view>
+        </picker>
       </view>
       <view class="item">
         <view class="hint">职业</view>
         <view class="value">
           <input type="text" placeholder="请输入职业" bindinput="setInpt" data-key="job" value="{{info.job}}" placeholder-class="plac"/>
-          <van-icon name="arrow" class="arrow"/>
         </view>
       </view>
 
